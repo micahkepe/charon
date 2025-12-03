@@ -1,3 +1,6 @@
+//! An unoptimized, naive version of the 1BRC.
+//!
+//! Completes in ~8 minutes on my machine.
 use std::{
     collections::BTreeMap,
     fs::File,
