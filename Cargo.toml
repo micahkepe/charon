@@ -3,4 +3,11 @@ name = "charon"
 version = "0.1.0"
 edition = "2024"
 
+[profile.release]
+# Suggestions from: https://nnethercote.github.io/perf-book/
+debug = true
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+
 [dependencies]
