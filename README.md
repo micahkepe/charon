@@ -26,19 +26,6 @@ Challenge](https://github.com/gunnarmorling/1brc):
 > {Abha=5.0/18.0/27.4, Abidjan=15.7/26.0/34.1, Abéché=12.1/29.4/35.6, Accra=14.7/26.4/33.1, Addis Ababa=2.1/16.0/24.3, Adelaide=4.1/17.3/29.7, ...}
 > ```
 
-## Populating CSV Data
-
-Run the modified `create_measurements.py` script to create the 1B row input file
-at `data/measurements.txt`:
-
-```bash
-./create_measurements.py 1_000_000_000
-```
-
-This took ~9 minutes on my machine:
-
-```
-Actual file size:  14.8 GiB
-Elapsed time: 8 minutes 58 seconds
-Test data build complete.
-```
+Refer to the original repository's
+[`create_measurements.sh`](https://github.com/gunnarmorling/1brc/blob/main/create_measurements.sh)
+script for populating the input `measurements.txt` file.

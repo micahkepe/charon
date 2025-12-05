@@ -1,6 +1,6 @@
 //! An unoptimized, naive version of the 1BRC.
 //!
-//! Completes in ~8 minutes on my machine.
+//! Completes in ~4 minutes on my machine.
 use std::{
     collections::BTreeMap,
     fs::File,
@@ -8,7 +8,7 @@ use std::{
 };
 
 fn main() {
-    let f = File::open("./data/measurements.txt").unwrap();
+    let f = File::open("./measurements.txt").unwrap();
     let f = BufReader::new(f);
 
     // stations[station] -> (min, sum, max, count)

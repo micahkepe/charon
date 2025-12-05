@@ -5,7 +5,7 @@ use std::{
 };
 
 fn main() {
-    let f = File::open("./data/measurements.txt").unwrap();
+    let f = File::open("./measurements.txt").unwrap();
     let f = BufReader::new(f);
 
     // stations[station] -> (min, sum, max, count)
